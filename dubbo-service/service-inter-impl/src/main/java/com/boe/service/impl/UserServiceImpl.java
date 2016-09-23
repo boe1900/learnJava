@@ -1,8 +1,10 @@
 package com.boe.service.impl;
 
 import com.boe.service.inter.domain.User;
+import com.boe.service.inter.domain.collections.UserDocument;
 import com.boe.service.inter.service.UserService;
 import com.boe.service.mapper.UserMapper;
+import com.boe.service.mongo.dao.UserMongoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -13,7 +15,14 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @Autowired
+    private UserMongoDao userMongoDao;
+
     public User getUserById(Long id) {
         return userMapper.selectById(id);
+    }
+
+    public void insertUser2Mongo(UserDocument user) {
+        userMongoDao.save(user);
     }
 }

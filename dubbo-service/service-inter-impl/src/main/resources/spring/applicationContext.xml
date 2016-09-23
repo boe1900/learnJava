@@ -14,8 +14,13 @@
 
 	<!-- 数据源-->
 	<import resource="application-datasource.xml"/>
+
 	<!-- 事务控制-->
 	<import resource="application-tx.xml"/>
+
+	<!-- mongo-->
+	<import resource="application-mongodb.xml"/>
+
 	<!-- 向外部暴露服务-->
 	<import resource="dubbo-provider.xml"/>
 

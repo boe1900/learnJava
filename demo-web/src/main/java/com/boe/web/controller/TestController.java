@@ -1,6 +1,7 @@
 package com.boe.web.controller;
 
 import com.boe.service.inter.domain.User;
+import com.boe.service.inter.domain.collections.UserDocument;
 import com.boe.service.inter.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,5 +24,14 @@ public class TestController {
     public User getUserMsgById(@PathVariable Long id){
         return userService.getUserById(id);
     }
+
+
+    @RequestMapping(value = "/saveUser", method = RequestMethod.GET)
+    @ResponseBody
+    public String savaUser(UserDocument userDocument){
+        userService.insertUser2Mongo(userDocument);
+        return "success";
+    }
+
 
 }

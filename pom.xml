@@ -158,6 +158,28 @@
             </dependency>
             <!-- zookeeper end-->
 
+            <!-- mongodb start-->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-mongodb</artifactId>
+                <version>1.8.2.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>2.13.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-mongodb-cross-store</artifactId>
+                <version>1.2.1.RELEASE</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>
+            <!-- mongodb end -->
+
 
         </dependencies>
     </dependencyManagement>
