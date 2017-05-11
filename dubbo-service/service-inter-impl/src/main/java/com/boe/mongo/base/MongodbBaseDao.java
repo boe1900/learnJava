@@ -1,4 +1,4 @@
-package com.boe.service.mongo.base;
+package com.boe.mongo.base;
 
 import com.mongodb.DBCollection;
 import org.springframework.beans.factory.annotation.Autowired;

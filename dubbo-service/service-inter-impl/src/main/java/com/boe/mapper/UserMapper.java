@@ -1,4 +1,4 @@
-package com.boe.service.mapper;
+package com.boe.mapper;
 
 import com.baomidou.mybatisplus.mapper.AutoMapper;
 import com.boe.service.inter.domain.User;

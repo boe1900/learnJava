@@ -12,7 +12,7 @@ import java.util.Date;
  * 用户表
  *
  */
-@TableName(value = "user")
+@TableName(value = "user_table")
 public class User implements Serializable {
 
 	@TableField(exist = false)

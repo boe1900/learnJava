@@ -1,7 +1,7 @@
-package com.boe.service.mongo.dao;
+package com.boe.mongo.dao;
 
+import com.boe.mongo.base.MongodbBaseDao;
 import com.boe.service.inter.domain.collections.UserDocument;
-import com.boe.service.mongo.base.MongodbBaseDao;
 import org.springframework.stereotype.Repository;
 
 /**

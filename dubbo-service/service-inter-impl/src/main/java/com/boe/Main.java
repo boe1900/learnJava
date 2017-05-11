@@ -1,4 +1,4 @@
-package com.boe.service;
+package com.boe;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

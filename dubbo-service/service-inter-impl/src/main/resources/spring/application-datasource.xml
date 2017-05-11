@@ -20,7 +20,7 @@
     <bean id="sqlSessionFactory" class="com.baomidou.mybatisplus.spring.MybatisSqlSessionFactoryBean">
    		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:xml/mybatis-config.xml" />
-		<property name="mapperLocations" value="classpath:com/boe/service/mapper/xml/*Mapper.xml" />
+		<property name="mapperLocations" value="classpath:com/boe/mapper/xml/*Mapper.xml" />
         <property name="plugins">
             <array>
                 <!-- 分页插件配置 -->
@@ -33,7 +33,7 @@
 
 	<!-- scan for mappers and let them be autowired -->
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.boe.service.mapper" />
+		<property name="basePackage" value="com.boe.mapper" />
 	</bean>
 
 </beans>

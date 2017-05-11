@@ -3,8 +3,8 @@ package com.boe.service.impl;
 import com.boe.service.inter.domain.User;
 import com.boe.service.inter.domain.collections.UserDocument;
 import com.boe.service.inter.service.UserService;
-import com.boe.service.mapper.UserMapper;
-import com.boe.service.mongo.dao.UserMongoDao;
+import com.boe.mapper.UserMapper;
+import com.boe.mongo.dao.UserMongoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
