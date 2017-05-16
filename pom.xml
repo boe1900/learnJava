@@ -25,13 +25,13 @@
 
         <project.version>1.0.0</project.version>
         <logback.version>1.0.13</logback.version>
-        <jdk.version>1.7</jdk.version>
-        <zookeeper.version>3.4.6</zookeeper.version>
+        <jdk.version>1.8</jdk.version>
+        <zookeeper.version>3.4.9</zookeeper.version>
 
         <!-- data -->
         <druid.version>1.0.18</druid.version>
         <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
-        <mybatis-plus.version>1.4.5</mybatis-plus.version>
+        <mybatis-plus.version>2.0.7</mybatis-plus.version>
 
         <mail.version>1.4.7</mail.version>
         <ehcache.version>2.6.11</ehcache.version>
@@ -114,12 +114,7 @@
                 <artifactId>spring-aspects</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!-- zookeeper依赖-->
-            <dependency>
-                <groupId>org.apache.zookeeper</groupId>
-                <artifactId>zookeeper</artifactId>
-                <version>${zookeeper.version}</version>
-            </dependency>
+
 
             <!-- data begin-->
             <dependency>
@@ -164,7 +159,7 @@
             <dependency>
                 <groupId>org.apache.zookeeper</groupId>
                 <artifactId>zookeeper</artifactId>
-                <version>3.4.6</version>
+                <version>${zookeeper.version}</version>
             </dependency>
 
             <dependency>

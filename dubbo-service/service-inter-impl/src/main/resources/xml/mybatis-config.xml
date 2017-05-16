@@ -27,6 +27,6 @@
 	
 	<!-- 查询对象别名配置 -->
 	<typeAliases>
-        <package name="com.boe.service.mapper"/>
+        <package name="com.boe.mapper"/>
 	</typeAliases>
 </configuration>
